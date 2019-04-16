@@ -1,3 +1,10 @@
+//----------------------------------------
+//
+// g++ filename.cpp -lgsl -lgslcblas -lm
+//
+//---------------------------------------
+
+
 #include <iostream>
 #include <cmath>
 #include <algorithm>
@@ -16,12 +23,12 @@ using namespace std;
 int main()
 {
 	int N_SITES = 2;
-	double e1 = 0.0;
+	double e1 = -2.0;
 	double e2 = 2.0;
 	// double t = 1.0;
 	double omega = -5.0;
 	int num_z_points = 1000;
-	double eta = 0.01;
+	double eta = 0.1;
 	double pi = acos(-1);
 	gsl_complex z, g11, g22, G11, G22, t;
 	GSL_SET_COMPLEX(&t, 1, 0);
